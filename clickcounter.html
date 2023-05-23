@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #bbfdff;
+    }
+    
+    .container {
+      margin-top: 100px;
+    }
+    
+    #click-area {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      background-color: #b5f8ba;
+      border: 2px solid #0c0c0c;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    
+    #clicks-count {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    
+    #cps-count {
+      font-size: 18px;
+    }
+    
+    #reset-button {
+      margin-top: 20px;
+      font-size: 18px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tennatix its closed right now, so there you have a click counter :D</h1>
+  
+  <div class="container">
+    <div id="click-area">
+      <div id="clicks-count">0</div>
+      <div id="cps-count">0 CPS</div>
+    </div>
+    <button id="reset-button" onclick="resetCounter()">Reset</button>
+  </div>
+  
+  <script src="click-counter.js"></script>
+</body>
+</html>
